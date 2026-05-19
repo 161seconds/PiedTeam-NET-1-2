@@ -1,0 +1,14 @@
+C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3\PiedTeam_NET1_2-Buoi3\bin\Debug\net8.0\PiedTeam_NET1_2-Buoi3.exe
+C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3\PiedTeam_NET1_2-Buoi3\bin\Debug\net8.0\PiedTeam_NET1_2-Buoi3.deps.json
+C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3\PiedTeam_NET1_2-Buoi3\bin\Debug\net8.0\PiedTeam_NET1_2-Buoi3.runtimeconfig.json
+C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3\PiedTeam_NET1_2-Buoi3\bin\Debug\net8.0\PiedTeam_NET1_2-Buoi3.dll
+C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3\PiedTeam_NET1_2-Buoi3\bin\Debug\net8.0\PiedTeam_NET1_2-Buoi3.pdb
+C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3\PiedTeam_NET1_2-Buoi3\obj\Debug\net8.0\PiedTeam_NET1_2-Buoi3.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3\PiedTeam_NET1_2-Buoi3\obj\Debug\net8.0\PiedTeam_NET1_2-Buoi3.AssemblyInfoInputs.cache
+C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3\PiedTeam_NET1_2-Buoi3\obj\Debug\net8.0\PiedTeam_NET1_2-Buoi3.AssemblyInfo.cs
+C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3\PiedTeam_NET1_2-Buoi3\obj\Debug\net8.0\PiedTeam_NET1_2-Buoi3.csproj.CoreCompileInputs.cache
+C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3\PiedTeam_NET1_2-Buoi3\obj\Debug\net8.0\PiedTeam_NET1_2-Buoi3.dll
+C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3\PiedTeam_NET1_2-Buoi3\obj\Debug\net8.0\refint\PiedTeam_NET1_2-Buoi3.dll
+C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3\PiedTeam_NET1_2-Buoi3\obj\Debug\net8.0\PiedTeam_NET1_2-Buoi3.pdb
+C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3\PiedTeam_NET1_2-Buoi3\obj\Debug\net8.0\PiedTeam_NET1_2-Buoi3.genruntimeconfig.cache
+C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3\PiedTeam_NET1_2-Buoi3\obj\Debug\net8.0\ref\PiedTeam_NET1_2-Buoi3.dll
