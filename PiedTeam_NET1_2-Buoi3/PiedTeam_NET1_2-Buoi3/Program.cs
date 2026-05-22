@@ -4,7 +4,7 @@
     {
         // INSTANCE VARIABLE - bien de luu info cua 1 object
         // BACK-FIELD, DATA-FIELD - BIEN DUNG DE LUU INFO CUA 1 OBJECT (tên gọi của C#)
-        // neu kh ghi puvlic, private (kh khai bao access modifier) thì mặc định là Private
+        // neu kh ghi public, private (kh khai bao access modifier) thì mặc định là Private
         // private string _id = "123";
         
         // DEFAULT VALUE 
@@ -21,7 +21,7 @@
             // private string _name;
             // private int _age;
             // -> get set
-            public static int Id {set;get;}
+            public int Id {set;get;}
             public string Name {set;get;}
             public int Yob {set;get;}
 
@@ -85,7 +85,6 @@
             // cung cấp khả năng modularity (mô đun hóa, chia nhỏ ra de ez quản li
             // bảo ve tính toàn vẹn của dữ liệu -> chỉ cho phép truy cập thông qa các access modifier (public, private, protected
             // hoặc là các hàm get/set
-        
         //2. Inheritance: 
             // đề cập den khả nang ke thua, tái sd lai code cu
             // khi class B kế thua class A, thì class B sẽ chứa code riêng của nó,

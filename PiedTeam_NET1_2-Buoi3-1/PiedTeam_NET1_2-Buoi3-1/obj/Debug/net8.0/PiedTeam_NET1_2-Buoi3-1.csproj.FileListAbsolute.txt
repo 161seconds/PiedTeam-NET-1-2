@@ -12,3 +12,4 @@ C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3-1\PiedTeam_NET1_2-Buoi3-1\obj\Debug
 C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3-1\PiedTeam_NET1_2-Buoi3-1\obj\Debug\net8.0\PiedTeam_NET1_2-Buoi3-1.pdb
 C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3-1\PiedTeam_NET1_2-Buoi3-1\obj\Debug\net8.0\PiedTeam_NET1_2-Buoi3-1.genruntimeconfig.cache
 C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3-1\PiedTeam_NET1_2-Buoi3-1\obj\Debug\net8.0\ref\PiedTeam_NET1_2-Buoi3-1.dll
+C:\C#\PiedTeam-NET-1-2\PiedTeam_NET1_2-Buoi3-1\PiedTeam_NET1_2-Buoi3-1\obj\Debug\net8.0\PiedTeam_NET1_2-Buoi3-1.sourcelink.json

@@ -157,14 +157,112 @@
                 new Product { Id = 5, Name = "AirPods Pro", Price = 6500, Category = "Phụ kiện" },
                 new Product { Id = 6, Name = "Galaxy Buds", Price = 4500, Category = "Phụ kiện" }
             };
-            var phoneListV1 = products.Where(p => p.Category == "Điện thoại").ToList();
-            //lấy ra sản phẩm có giá trị lớn hơn 20k
-            var phoneListV2 = products.Where(p => p.Price > 20000).ToList();
-            //lấy ra sản phẩm có cate là điện thoại va có giá > 20k
-            var phoneListV3 = products.Where(p => p.Category == "Điện thoại"
-                                                        && p.Price > 20000).ToList();
-            //lấy ra sản phẩm có cate là điện thoại hoac có giá > 20k
-            var phoneListV4 = products.Where(p => p.Category == "Điện thoại"
-                                                        || p.Price > 20000).ToList();
+            // var phoneListV1 = products.Where(p => p.Category == "Điện thoại").ToList();
+            // //lấy ra sản phẩm có giá trị lớn hơn 20k
+            // var phoneListV2 = products.Where(p => p.Price > 20000).ToList();
+            // //lấy ra sản phẩm có cate là điện thoại va có giá > 20k
+            // var phoneListV3 = products.Where(p => p.Category == "Điện thoại"
+            //                                             && p.Price > 20000).ToList();
+            // //lấy ra sản phẩm có cate là điện thoại hoac có giá > 20k
+            // var phoneListV4 = products.Where(p => p.Category == "Điện thoại"
+            //                                             || p.Price > 20000).ToList();
+            Console.WriteLine("=====Bai 4=====");
+            Console.WriteLine("vẫn la LINQ");
+            List<Product> productDemoPagings = new List<Product>
+            {
+                new Product { Id = 1, Name = "iPhone 15", Price = 25000, Category = "Điện thoại" },
+                new Product { Id = 2, Name = "Samsung S24", Price = 22000, Category = "Điện thoại" },
+                new Product { Id = 3, Name = "MacBook Air", Price = 32000, Category = "Laptop" },
+                new Product { Id = 4, Name = "Dell XPS", Price = 28000, Category = "Laptop" },
+                new Product { Id = 5, Name = "AirPods Pro", Price = 6500, Category = "Phụ kiện" },
+                new Product { Id = 6, Name = "Galaxy Buds", Price = 4500, Category = "Phụ kiện" },
+                new Product { Id = 7, Name = "Galaxy Buds", Price = 4500, Category = "Phụ kiện" },
+                new Product { Id = 8, Name = "Galaxy Buds", Price = 4500, Category = "Phụ kiện" },
+                new Product { Id = 9, Name = "Galaxy Buds", Price = 4500, Category = "Phụ kiện" },
+                new Product { Id = 10, Name = "Galaxy Buds", Price = 4500, Category = "Phụ kiện" },
+                new Product { Id = 11, Name = "Galaxy Buds", Price = 4500, Category = "Phụ kiện" },
+                new Product { Id = 12, Name = "Galaxy Buds", Price = 4500, Category = "Phụ kiện" },
+                new Product { Id = 13, Name = "Galaxy Buds", Price = 4500, Category = "Phụ kiện" },
+                new Product { Id = 14, Name = "Galaxy Buds", Price = 4500, Category = "Phụ kiện" },
+                new Product { Id = 15, Name = "Galaxy Buds", Price = 4500, Category = "Phụ kiện" },
+                new Product { Id = 16, Name = "Galaxy Buds", Price = 4500, Category = "Phụ kiện" },
+                new Product { Id = 17, Name = "iPhone 15", Price = 25000, Category = "Điện thoại" },
+            };
+            // 1 trang có 3pt 
+            var pageIndex = 1;
+            var pageSize = 3;
+            var paging = productDemoPagings.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+            foreach (var product in paging)
+            {
+                Console.WriteLine($"Id: {product.Id} | Name: {product.Name} | Price: {product.Price} | Category: {product.Category}");
+            }
+
+            var productCount = productDemoPagings.Count(x => x.Category == "Laptop");
+            Console.WriteLine("so luong laptop: " + productCount);
+            
+            //loi di rieng (truong phai khac)
+            var query = productDemoPagings.Where(x => x.Category == "Laptop");
+            query = query.Where(x => x.Price > 2500);
+            query = query.Where(x => x.Price < 2500);
+            var queryRun = query.Count();
+            Console.WriteLine("so luong laptop co gia > 2500 va < 2500 la: " + queryRun);
+            
+            //them truong phai khac nua
+            var firstPhone = productDemoPagings.Where(x => x.Category == "Laptop").FirstOrDefault();
+            Console.WriteLine("dien thoai dau tien la: " +  firstPhone.Name);
+            
+            //select, dung de truy van lay ra 1 kieu du lieu khac (projection)
+            // Student: Id, FirstName, LastName, Yob
+            // SELECT FirstName, LastName FROM Student
+            // khi ma ket qua tra ra no phai nam o trong 1 cai Object
+            // chua' LastName va FirstName thoi
+            var selectResult = products.Select(p => new ProductDto()
+            {
+                ProductName = p.Name,
+                ProductPrice = p.Price,
+                Category = p.Category,
+            }).ToList();
+            
+            // đối với mỗi pt trong products thì ánh xa thanh productDto
+            foreach (var item in selectResult)
+            {
+                Console.WriteLine($"Name: {item.ProductName} | Price: {item.ProductPrice} | Category: {item.Category}");
+            }
+            
+            // đối với mỗi pt trong products thì ánh xạ thành string????
+            // ánh xa t A -> B dựa vào các tính chất của vật the A
+            // hieu là lấy từ A bỏ hết qua B nhma vẫn dựa lên tính chất của A
+            var selectResultV2 = products.Select(p => p.Category + " " + p.Price).ToList();
+            foreach (var item in selectResultV2)
+            {
+                Console.WriteLine(item);
+            }
+            
+            //anh xa giup anh tu List Product sang so 1 List ID (int)
+            var selectResultString = products.Select(p => p.Id + " ").ToList();
+            foreach (var item in selectResultString)
+            {
+                Console.WriteLine(item);
+            }
+
+            // orderByDescending: sắp xep giảm dần
+            Console.WriteLine("listReverse");
+            var listReverse =  productDemoPagings
+                .Where(p => p.Category == "Điện thoại")
+                .Select(x => new ProductDto()
+                {
+                    ProductName = x.Name,
+                    ProductPrice = x.Price,
+                    Category = x.Category,
+                })
+                .OrderByDescending(p => p.ProductPrice)
+                .Skip(3)
+                .Take(3)
+                .ToList();
+            // filter -> sort -> map
+            foreach (var item in listReverse)
+            {
+                Console.WriteLine($"name: {item.ProductName} price: {item.ProductPrice} | Category: {item.Category}");
+            }
     }
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PiedTeam_NET1_2-Buoi3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3cb4fe0bfe03695942d2909ada327c3074c12560")]
 [assembly: System.Reflection.AssemblyProductAttribute("PiedTeam_NET1_2-Buoi3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PiedTeam_NET1_2-Buoi3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
