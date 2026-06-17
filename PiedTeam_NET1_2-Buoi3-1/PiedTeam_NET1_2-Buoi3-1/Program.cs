@@ -239,7 +239,7 @@
             }
             
             //anh xa giup anh tu List Product sang so 1 List ID (int)
-            var selectResultString = products.Select(p => p.Id + " ").ToList();
+            var selectResultString = products.Select(p => p.Id + " ").ToList();  
             foreach (var item in selectResultString)
             {
                 Console.WriteLine(item);
